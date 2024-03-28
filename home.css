@@ -15,7 +15,7 @@ input[type="password"] {
 }
 
 /* Set a style for all buttons */
-button {
+/* button {
   background-color: #04aa6d;
   color: white;
   padding: 14px 20px;
@@ -23,7 +23,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
-}
+} */
 
 button:hover {
   opacity: 0.8;
@@ -131,7 +131,6 @@ span.psw {
   }
 }
 
-
 input[type="text"],
 input[type="password"] {
   width: 100%;
@@ -179,4 +178,60 @@ a {
 .signin {
   background-color: #f1f1f1;
   text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* max-width: 300px; */
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card > button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card > button:hover {
+  opacity: 0.7;
+}
+
+#allCards {
+  width: 90%;
+  margin-left: 5%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.categories {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.btns {
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  display: block;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: blue;
+  border: none;
 }

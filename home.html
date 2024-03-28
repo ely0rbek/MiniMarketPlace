@@ -9,6 +9,7 @@
       rel="stylesheet"
       id="bootstrap-css"
     />
+
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="home.css" />
@@ -66,66 +67,6 @@
             </li>
           </ul>
         </div>
-
-        <!-- <div class="modal" id="myModal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h4 class="modal-title">Customer Sign In</h4>
-                <button type="button" class="close" data-dismiss="modal">
-                  ×
-                </button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <label class="sr-only" for="usrname">Username</label>
-                  <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon1"
-                        ><i class="fa fa-user"></i
-                      ></span>
-                    </div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Username"
-                      aria-label="Username"
-                      aria-describedby="basic-addon1"
-                    />
-                  </div>
-
-                  <label class="sr-only" for="Password">Name</label>
-                  <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="basic-addon2"
-                        ><i class="fa fa-key"></i
-                      ></span>
-                    </div>
-                    <input
-                      id="Password"
-                      type="password"
-                      class="form-control"
-                      placeholder="Password"
-                      aria-label="Password"
-                      aria-describedby="basic-addon2"
-                    />
-                  </div>
-                </form>
-              </div>
-
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Sign In</button>
-                <button
-                  type="button"
-                  class="btn btn-danger"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </nav>
     </div>
     <div id="id01" class="modal">
@@ -258,24 +199,15 @@
       </form>
     </div>
 
-    <div class="datas">
-      <div class="tugmalar">
-        <p class="d-inline-flex gap-1">
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              Link with href
-            </a>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Button with data-bs-target
-            </button>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body">
-              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-            </div>
-          </div>
-      </div>
-
-      </div>
+    <div class="categories">
+      <button class="btns" onclick="Summer()">Yozgi kiyimlar</button>
+      <button class="btns" onclick="Spring()">Bahorgi va kuzgi kiyimlar</button>
+      <button class="btns" onclick="Winter()">Qishki kiyimlar</button>
+      <button class="btns" onclick="Nighty()">Tungi kiyimlar</button>
     </div>
+
+    <div id="allCards"></div>
+
+    <script src="home.js"></script>
   </body>
 </html>
